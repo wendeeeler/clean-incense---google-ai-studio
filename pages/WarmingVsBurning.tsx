@@ -9,9 +9,9 @@ const data = [
 const WarmingVsBurning: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <header className="mb-16 text-center">
+      <header className="mb-16">
         <h1 className="font-serif text-4xl md:text-5xl text-stone-900 mb-6">Incense Warming vs. Burning</h1>
-        <p className="text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-stone-600 max-w-2xl leading-relaxed">
           The difference isn't just smoke. It's about chemistry, temperature, and the preservation of scent.
         </p>
       </header>
