@@ -18,7 +18,7 @@ const WarmingVsBurning: React.FC = () => {
 
       <section className="mb-20">
         <div className="bg-white p-8 rounded shadow-sm border border-stone-100">
-            <h3 className="text-center font-serif text-xl mb-8 text-stone-800">The Temperature Gap</h3>
+            <h3 className="font-serif text-xl mb-8 text-stone-800">The Temperature Gap</h3>
             <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
@@ -36,7 +36,7 @@ const WarmingVsBurning: React.FC = () => {
                 </BarChart>
             </ResponsiveContainer>
             </div>
-            <p className="text-center text-sm text-stone-500 mt-4 italic">
+            <p className="text-sm text-stone-500 mt-4 italic">
                 Burning destroys delicate aromatic compounds before they can be released.
             </p>
         </div>
