@@ -20,7 +20,7 @@ const ScrollToTop = () => {
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-[#F7F5F3] text-stone-800 font-sans selection:bg-stone-200">
+      <div className="min-h-screen flex flex-col text-stone-900 font-sans selection:bg-stone-200 leading-editorial">
         <Navigation />
         <main className="flex-grow">
           <Routes>

@@ -3,15 +3,15 @@ import React from 'react';
 const DefinitionBlock: React.FC = () => {
   return (
     <section 
-      className="bg-[#F9F9F9] border-l-4 border-stone-300 p-8 md:p-10 my-12" 
+      className="max-w-4xl mx-auto border-y border-stone-200 py-16 my-24 text-center" 
       aria-label="Definition of Clean Incense"
     >
-      <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-baseline">
-        <h2 className="font-mono text-xs font-bold text-stone-400 uppercase tracking-widest shrink-0">
-          Definition
+      <div className="flex flex-col items-center px-4">
+        <h2 className="font-serif text-4xl md:text-6xl text-stone-900 mb-8 tracking-tight lowercase">
+          clean incense <span className="font-serif italic text-2xl md:text-3xl text-stone-400 font-normal ml-2">(n.)</span>
         </h2>
-        <p className="font-serif text-xl md:text-2xl text-stone-800 leading-relaxed max-w-3xl">
-          <strong className="font-semibold text-stone-900">Clean incense</strong> (n.) — Incense composed of natural botanicals and resins that releases aroma through gentle warming rather than combustion. It prioritizes transparency, avoids synthetic accelerants, and results in a low-emission scent experience.
+        <p className="font-serif text-xl md:text-3xl text-stone-800 leading-relaxed max-w-3xl mx-auto">
+          Incense composed of natural botanicals and resins that releases aroma through gentle warming rather than combustion. It prioritizes transparency, avoids synthetic accelerants, and results in a low-emission scent experience.
         </p>
       </div>
     </section>
