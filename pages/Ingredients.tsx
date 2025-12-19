@@ -5,7 +5,7 @@ const Ingredients: React.FC = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-20">
       <header className="mb-24 max-w-3xl">
-        <h1 className="font-serif text-4xl md:text-5xl text-stone-900 mb-6 tracking-tight">Botanical Ingredient Guide</h1>
+        <h1 className="font-serif text-4xl md:text-6xl text-stone-900 mb-6 tracking-tight">Botanical Ingredients</h1>
         <p className="text-xl text-stone-600 leading-relaxed font-light">
           Clean incense relies on the complexity of nature, not the chemistry lab. Here are the foundational botanicals used in clean scenting.
         </p>
@@ -22,12 +22,12 @@ const Ingredients: React.FC = () => {
             <dl className="space-y-6">
               <div>
                 <dt className="font-sans text-xs font-bold uppercase tracking-wider text-stone-400 mb-2">Aroma Profile</dt>
-                <dd className="font-serif text-lg text-stone-800 leading-relaxed">{item.profile}</dd>
+                <dd className="font-serif text-lg text-stone-800 leading-relaxed italic">{item.profile}</dd>
               </div>
               
-              <div>
+              <div className="bg-stone-50 p-4 border border-stone-100 rounded-sm">
                 <dt className="font-sans text-xs font-bold uppercase tracking-wider text-stone-400 mb-2">Behavior on Warmer</dt>
-                <dd className="font-serif text-lg text-stone-800 leading-relaxed">{item.behavior}</dd>
+                <dd className="font-serif text-lg text-stone-900 leading-relaxed font-medium">{item.behavior}</dd>
               </div>
 
               <div>

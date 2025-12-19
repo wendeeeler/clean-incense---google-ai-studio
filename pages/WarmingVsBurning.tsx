@@ -48,7 +48,6 @@ const WarmingVsBurning: React.FC = () => {
                 </BarChart>
             </ResponsiveContainer>
 
-            {/* Editorial Annotations - Positioned based on typical bar locations */}
             <div className="hidden md:block absolute top-[60%] left-[10%] w-48 text-right pr-6 border-r border-stone-300/50">
                 <p className="font-serif italic text-stone-600 text-lg">Optimal aromatic release</p>
                 <p className="font-mono text-[10px] uppercase tracking-widest text-stone-400 mt-2">Full profile preserved</p>
@@ -76,7 +75,7 @@ const WarmingVsBurning: React.FC = () => {
         <div>
           <h2 className="font-serif text-3xl mb-6 text-stone-900 tracking-editorial">How Warming Works</h2>
           <p className="text-stone-600 mb-6 leading-editorial text-lg">
-            Incense warming uses a tealight or electric heater to raise the temperature of the material to between 100°C and 200°C.
+            Incense warming uses radiant or conductive heat to raise the temperature of the material to between 100°C and 200°C.
           </p>
           <p className="text-stone-600 mb-6 leading-editorial text-lg">
             This "sweet spot" is hot enough to melt resins and evaporate essential oils, but cool enough to prevent the plant material from catching fire. The result is pure aroma with zero smoke.

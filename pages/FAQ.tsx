@@ -3,21 +3,31 @@ import { FAQS } from '../constants';
 
 const FAQ: React.FC = () => {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-20">
-      <header className="mb-16">
-        <h1 className="font-serif text-4xl text-stone-900 mb-4">Frequently Asked Questions</h1>
-        <p className="text-stone-600 text-lg">Common questions about safety, smoke, and ingredients.</p>
+    <div className="max-w-4xl mx-auto px-6 py-32" itemScope itemType="https://schema.org/FAQPage">
+      <header className="mb-24 border-b border-stone-200 pb-16">
+        <h1 className="font-serif text-4xl md:text-6xl text-stone-900 mb-8 tracking-editorial">Clarifications</h1>
+        <p className="text-xl text-stone-500 font-light leading-loose">Analytical responses to common inquiries regarding thermal release and air quality.</p>
       </header>
 
-      <div className="space-y-12">
+      <div className="space-y-20">
         {FAQS.map((faq, index) => (
-          <article key={index} className="border-b border-stone-100 pb-8 last:border-0">
-            <h2 className="font-serif text-xl md:text-2xl text-stone-800 mb-3">
-              {faq.question}
-            </h2>
-            <p className="text-stone-600 leading-relaxed text-lg">
-              {faq.answer}
-            </p>
+          <article 
+            key={index} 
+            className="grid md:grid-cols-12 gap-8"
+            itemProp="mainEntity" 
+            itemScope 
+            itemType="https://schema.org/Question"
+          >
+            <div className="md:col-span-4">
+               <h2 className="font-serif text-2xl text-stone-900 tracking-editorial italic" itemProp="name">
+                {faq.question}
+              </h2>
+            </div>
+            <div className="md:col-span-8" itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+              <p className="text-stone-600 leading-loose text-lg font-light font-sans" itemProp="text">
+                {faq.answer}
+              </p>
+            </div>
           </article>
         ))}
       </div>

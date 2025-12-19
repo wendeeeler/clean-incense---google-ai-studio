@@ -9,19 +9,19 @@ const Navigation: React.FC = () => {
   return (
     <nav className="sticky top-0 z-50 bg-[#F7F5F3]/95 backdrop-blur-sm border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <NavLink to="/" className="font-serif text-xl tracking-tight text-stone-800 hover:text-stone-600 transition-colors">
+        <NavLink to="/" className="font-serif text-2xl tracking-tight text-stone-900 hover:text-stone-600 transition-colors">
           {SITE_TITLE}
         </NavLink>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-10">
           {NAV_ITEMS.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `text-sm font-medium tracking-wide transition-colors ${
-                  isActive ? 'text-stone-900 border-b border-stone-800 pb-0.5' : 'text-stone-500 hover:text-stone-800'
+                `text-sm font-medium tracking-wide transition-all ${
+                  isActive ? 'text-stone-900 border-b border-stone-900' : 'text-stone-400 hover:text-stone-800'
                 }`
               }
             >
@@ -42,15 +42,15 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-[#F7F5F3] border-b border-stone-200 px-6 py-4 space-y-4 shadow-lg absolute w-full">
+        <div className="md:hidden bg-[#F7F5F3] border-b border-stone-200 px-6 py-8 space-y-6 shadow-xl absolute w-full">
           {NAV_ITEMS.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `block text-base font-medium ${
-                  isActive ? 'text-stone-900' : 'text-stone-500'
+                `block text-lg font-medium ${
+                  isActive ? 'text-stone-900' : 'text-stone-400'
                 }`
               }
             >
